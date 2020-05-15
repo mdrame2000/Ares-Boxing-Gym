@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Ares Boxing Gym</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="style_m.css">
+</head>
+
+<body>
+
+<header>
+	<nav>
+		<ul class="main_menu">
+			<li><a href="index.html"><img src="logo.png" width="5%" align="left"></a></li>
+			<li><a href="facilities.html"> Our Facilities </a></li>
+			<li><a href="classes.html"> Membership & Personal Training </a></li>
+			<li><a href="contact.html"> Contact Us </a></li>
+			<li><a href="https://goo.gl/maps/mDJhG3ZRK9KPgVPWA"> Directions </a></li>
+		</ul>
+	</nav>
+</header>
+
+	<h1> Membership Signup </h1>
+
+	<form id="form">
+		<p>
+			<label>Full Name</label><br>
+			<input type="text" name="name" required>
+		</p>
+		<p>
+			<label>Applicant Date of Birth</label><br>
+			<input type="text" name="date" required>
+		</p>
+		<p>
+			<label>Email Address</label><br>
+			<input type="email" name="email" required>
+		</p>
+		<p>
+			<label>Phone Number</label><br>
+			<input type="text" name="phone" required>
+		</p>
+			<label>Membeship Tier</label>
+		</p>
+			
+		</div>
+		<p class="send">
+			<button type="submit"> Submit </button>
+		</p>
+	</form>
+
+	<h3 id="result"></h3>
+
+
+	<script type="text/javascript">
+		var form = document.getElementById('form');
+		form.onsubmit = function(e) {
+		e.preventDefault();
+		var result = document.getElementById('result');
+		result.innerHTML = 'Welcome to Ares Boxing Gym, ' + form.name.value + '. Follow the instructions on our confirmation email to finalize your membership.';
+		this.reset();
+	};
+	</script>
+
+<footer>
+	<nav>
+		<ul class="main_menu2">
+			<li><a href="https://github.com/mdrame2000"> Mohamed Drame, Spring 2020 </a></li>
+		</ul>
+	</nav>
+</footer>
+
+</body>
+
+</html>
