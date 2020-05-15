@@ -94,6 +94,7 @@ footer {
 	height: 40px;
 	background-color: #4B0082;
 	bottom: 0;
+	position: absolute;
 }
 
 .main_menu2 {
